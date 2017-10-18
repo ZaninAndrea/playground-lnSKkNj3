@@ -1,18 +1,20 @@
-**Functional programming** is one of those things that you probably heard about, but never approached, because it looked too hard or too theoretical. Wait no more! In this course, I'll introduce you to functional programming through examples and exercises in a familiar language: JavaScript.  
-As a reference, here are the topics we'll talk about:  
-- Pure functions
-- Higher Order Functions
-- Currying
-- Recursion
-- Functors
-- Monads
+La **programmazione funzionale** è una di quelle cose, che probabilmente hai già sentito, ma non hai mai approfondito, magari perché sembrava troppo difficile o troppo teorica. Questo è il momento giusto! In questo corso ti introdurrò alla programmazione funzionale attraverso esempi ed esercizi in un linguaggio comune: JavaScript.  
+Come riferimento, questi sono gli argomenti di cui parleremo:
+- Funzioni pure
+- Funzioni di ordine superiore
+- Applicazione parziale
+- Recursione
+- Funtore
+- Monadi
 
-You need to know basic JavaScript usage; if you never programmed in JavaScript, you can checkout [this quick intro](https://learnxinyminutes.com/docs/javascript/) and come back, I'll wait for you.
+Prima di iniziare devi sapere le basi del JavaScript, quindi se non lo hai mai usato, leggi [questa rapida introduzione](https://learnxinyminutes.com/docs/javascript/) e torna qui, ti aspetto.
 
-Open Source is <3, so here is the [repository](https://github.com/ZaninAndrea/functional-programming-tutorial) for this playground, feel free to contribute, clone, ...
+Open Source è <3, quindi sentiti libero di clonare o contribuire alla [repository](https://github.com/ZaninAndrea/functional-programming-tutorial) di questa guida.
 
-# Pure Functions  
-I admit it, I lied to you: we need a tiny bit of theory to get started.  
+# Funzioni pure
+Lo ammetto, ti ho mentito: abbiamo bisogno di un po' di teoria prima di inziare.
+
+
 One key concept of functional programming is that functions should not have side-effects and should not depend on external state, i.e. a function should take some input and return some output without modifying or accessing any value outside the function.
 
 If calling a function without using its return value makes sense, it is a sign that the function is not pure; you would never do that with a pure function.  
