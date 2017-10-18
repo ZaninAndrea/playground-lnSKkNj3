@@ -1,25 +1,20 @@
-title : Practical introduction to Functional Programming with JS
-
-# Table of contents
+title: Introduzione pratica alla programmazione funzionale in JS
 plan:
-  - title: Pure Functions # Set the page title
-    statement: markdowns/pure.md # Set the file path to the page content
-  - title: Higher Order Functions
-    statement: markdowns/higher.md
-  - title: Currying
-    statement: markdowns/currying.md
-  - title: Recursion
-    statement: markdowns/recursion.md
-  - title: Functors and Monads
-    statement: markdowns/functors.md
-  - title: Conclusion
-    statement: markdowns/conclusion.md
-
-# Settings for your programming projects and the associated Docker images
+- title: Funzioni pure
+  statement: markdowns/pure.md
+- title: Higher Order Functions
+  statement: markdowns/higher.md
+- title: Currying
+  statement: markdowns/currying.md
+- title: Recursion
+  statement: markdowns/recursion.md
+- title: Functors and Monads
+  statement: markdowns/functors.md
+- title: Conclusion
+  statement: markdowns/conclusion.md
 projects:
   nodejs:
-    root: "/nodejs-project"
-    # Set the docker image. This image runs mocha tests using this syntax:
-    # @[Code Editor Title]({"stubs": ["EditorFile1.js", "EditorFile2.js", ...], "command": "node_modules/mocha/bin/mocha TestFile.js --reporter list"})
-    # More details here: https://github.com/TechDotIO/node-npm-runner
-    runner: techio/node-npm-runner:latest
+    root: /nodejs-project
+    runner:
+      name: techio/node-npm-runner
+      version: latest
